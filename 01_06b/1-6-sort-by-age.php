@@ -44,12 +44,12 @@ function print_array($a)
 function compare_ages($p1, $p2)
 {
 	if ($p1->get_age() > $p2->get_age()) {
-		return	$p1->get_name() . " is older than " . $p2->get_name();
+		return	1;
 	}
 	if ($p1->get_age() < $p2->get_age()) {
-		return $p1->get_name() . " is younger than " . $p2->get_name();
+		return 0;
 	}
-	return $p1->get_name() . " and " . $p2->get_name() . " are the same age";
+	return 0;
 }
 
 $joe = new Person('Joe', '2010-10-20');
